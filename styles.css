@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Norse Bold;
+    src: url(../fonts/Norse-Bold.otf);
+  }
+
+h1 {
+    font-family: Norse Bold, sans-serif;
+}
+
+body
+
+.signup-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-section {
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+    background-image: url(./images/odin-project-image.png);
+    background-repeat: no-repeat;
+
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    flex-direction: column;
+}
+
+.intro-content {
+    height: 40vh;
+}
+
+.form-container {
+    height: 30vh;
+}
+
+.submit_button {
+    height: 30vh;
+}
