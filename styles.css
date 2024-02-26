@@ -5,9 +5,17 @@
 
 h1 {
     font-family: Norse Bold, sans-serif;
+    color: white;
 }
 
-body
+h3 {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .signup-wrapper {
     display: flex;
@@ -18,28 +26,58 @@ body
 
 .left-section {
     display: flex;
-    justify-content: center;
-    width: 35vw;
     background-image: url(./images/odin-project-image.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
 
 }
 
 .right-section {
     display: flex;
-    justify-content: center;
-    width: 65vw;
     flex-direction: column;
+    background-color: #f5f5f5;
+    width: 65vw;
 }
 
 .intro-content {
-    height: 40vh;
+    height: 38vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 40px;
+    margin-bottom:40px;
 }
 
 .form-container {
-    height: 30vh;
+    height: 27vh;
+    background-color: white;
 }
+
+.form-container>h3 {
+    margin-left: 40px;
+}
+
+
+.sign-up-form {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+
+.submit_button {
+    padding-top: 25px;
+    margin-left: 40px;
+}
+
+
+*/
 
 .submit_button {
     height: 30vh;
+}
+
+.submit_button>button {
+    color:#596D48
 }
