@@ -1,16 +1,8 @@
 @font-face {
-    font-family: Norse Bold;
+    font-family: Norse-Bold;
     src: url(../fonts/Norse-Bold.otf);
-  }
-
-h1 {
-    font-family: Norse Bold, sans-serif;
-    color: white;
 }
 
-h3 {
-    font-family: sans-serif;
-}
 
 body {
     margin: 0;
@@ -30,7 +22,56 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 35vw;
+    flex-direction: column;
+}
 
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.logo-image {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: white;
+    font-size: 60px;
+    font-family: Norse-Bold;
+}
+
+.semi-transparent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: Norse-Bold, sans-serif;
+
+}
+
+.photo-credits {
+    display: flex;
+    height: 60vh;
+    align-items: flex-end;
+    justify-content: center;
+    width: 35vh;;
+}
+
+.p-footer
+ {
+    color: white;
+    font-size: 12px;
+}
+
+.a-footer{
+    color: white;
+    text-decoration: underline;
 }
 
 .right-section {
@@ -53,7 +94,7 @@ body {
     height: 38vh;
     background-color: white;
     margin-bottom: 10px;
-    border-bottom: 1px solid;
+    box-shadow: 2px 4px #E5E7EB;
 }
 
 .form-container>h3 {
@@ -73,12 +114,13 @@ body {
     width: 80%;
     justify-content: center;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 .form-div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 input {
@@ -104,8 +146,10 @@ input:invalid {
 
 
 label {
-    font-size: 15px;
+    font-size: 10px;
     color: #363835;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-weight: 500;
 }
 
 #error {
@@ -115,7 +159,7 @@ label {
 }
 
 .submit_button {
-    height: 30vh;
+    margin-top: 5px;
 }
 
 .button {
@@ -127,6 +171,15 @@ label {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bolder;
     border-radius: 5px;
+    box-shadow: 2px 4px #E5E7EB;
+}
+.hyperlink {
+    margin-top: 30px;
+
+}
+a {
+    text-decoration: none;
+    color: #596D48;
 }
