@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js"></script>
     <title>The ODIN Login Form</title>
 </head>
 <body>
@@ -36,38 +37,39 @@
                 <h3>Let's do this!</h3>
                 <form action="" id="sign-up-form" class="sign-up-form" method="get">
                     <div class="form-content">
-                        <div class="first_name">
+                        <div class="form-div">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" value="Thor"required>
+                            <input type="text" id="first_name" value="Thor">
                         </div>
-                        <div class="user_email">
+                        <div class="form-div">
                             <label for="user_email">EMAIL</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email">
                         </div>
-                        <div class="password">
+                        <div class="form-div">
                             <label for="password">PASSWORD</label>
                             <input type="password" id="password" required>
+                            <p id="error"></p>
                         </div>
                     </div>
                     <div class="form-content">
-                        <div class="last_name">
+                        <div class="form-div">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" value="Odinson" required>
+                            <input type="text" id="last_name" value="Odinson">
                         </div>
-                        <div class="phone_number">
+                        <div class="form-div">
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" id="phone_number" class="phone-number" minlength="10" required>
+                            <input type="tel" id="phone_number" class="phone-number" maxlength="10">
                         </div>
                         
-                        <div class="confirm_password">
+                        <div class="form-div">
                             <label for="password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" required>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="submit_button">
-                <button type="submit">Create Account</button>
+                <a href="#" class="button">Create Account</a>
                 <p>Already have an account?<a href="#"><strong> Log in</strong></a></p>
             </div>
         </div>
